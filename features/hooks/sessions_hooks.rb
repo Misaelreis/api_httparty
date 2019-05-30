@@ -1,4 +1,4 @@
-Before '@login' do
+Before '@sessions' do
     @body = JSON.generate({
         'session' => {
             'email' => "misael.qa@email.com",
@@ -11,14 +11,5 @@ Before '@login' do
         'Accept' => 'application/vnd.tasksmanager.v2' 
     }
 @login = Secao.new(@body, @header)
-@req = @login.post_login
-@token = @req ['data']['attributes']['auth-token']
-end
 
-Before '@logout' do 
-    @header = {
-        'Content-Type' => 'application/json',
-        'Accept' => 'application/vnd.tasksmanager.v2' 
-    }
-@logout = Secao.new(false, @header)
 end

@@ -4,12 +4,12 @@ Quando("realizar a requisicao para fazer login na api") do
         puts $response.body
         puts $response.headers
         puts $response.message
+        $token = $response['data']['attributes']['auth-token']
+        puts $token
 end
   
 Quando("realizar a requisicao para fazer logout na api") do
-    $response = @logout.del_logout
+    $response = @login.del_logout($token)
     puts $response.code
-    puts $response.body
-    puts $response.headers
     puts $response.message
 end

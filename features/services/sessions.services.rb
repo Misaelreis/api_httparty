@@ -1,8 +1,9 @@
 class Secao
     include HTTParty
     base_uri 'https://api-de-tarefas.herokuapp.com'
+    #debug_output $stderr
 
-    def initialize(body, header)
+    def initialize(body = {}, header)
         @options = {
             :headers => header,
             :body => body
