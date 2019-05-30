@@ -7,7 +7,7 @@ Quando("realizar a requisicao para fazer login na api") do
 end
   
 Quando("realizar a requisicao para fazer logout na api") do
-    $response = @cadastro.delete_logout
+    $response = @logout.del_logout
     puts $response.code
     puts $response.body
     puts $response.headers

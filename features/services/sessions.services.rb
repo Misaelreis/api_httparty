@@ -10,10 +10,11 @@ class Secao
     end
 
     def post_login 
-        self.class.post('/sessions', @options)
+        self.class.post("/sessions", @options)
     end
 
-    def delete_logout
-        self.class.delete('sessions/'@token, @options)
+    def del_logout(tk)
+        self.class.delete("/sessions/#{tk}", @options)
     end
+
 end

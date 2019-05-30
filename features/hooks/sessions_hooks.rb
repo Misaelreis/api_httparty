@@ -12,7 +12,7 @@ Before '@login' do
     }
 @login = Secao.new(@body, @header)
 @req = @login.post_login
-@token = @req["auth-token"]
+@token = @req ['data']['attributes']['auth-token']
 end
 
 Before '@logout' do 
@@ -21,5 +21,4 @@ Before '@logout' do
         'Accept' => 'application/vnd.tasksmanager.v2' 
     }
 @logout = Secao.new(false, @header)
-
 end
