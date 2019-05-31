@@ -20,3 +20,11 @@ Before '@contact' do
     }
 @cadastro = Contact.new(@body, @header)
 end
+
+Before '@listcontact' do
+    @header = {
+        'Content-Type' => 'application/json',
+        'Accept' => 'application/vnd.tasksmanager.v2' 
+    }
+@list = Contact.new(false, @header)
+end

@@ -12,4 +12,8 @@ class Contact
     def post_contact
         self.class.post('/contacts', @options)
     end
+
+    def get_list
+        self.class.get("/contacts", @options)
+    end
 end

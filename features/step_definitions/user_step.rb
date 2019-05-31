@@ -8,5 +8,4 @@ Quando("realizar a requisição para cadastrar um novo usuário") do
   
   Então("a api retorna o código {int}") do |status_code|
     expect(status_code).to eq($response.code)
-    
   end
