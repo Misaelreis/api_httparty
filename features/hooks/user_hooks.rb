@@ -19,3 +19,19 @@ Before '@user' do
 
     @cadastro = User.new(@body, @header)
 end
+
+Before '@edituser' do
+    @body = JSON.generate({
+        'user'=> {
+            'email'=> 'misael.qa@email.com',
+            'password'=> '123456',
+            'password_confirmation'=> '123456'
+          }
+    })
+
+    @header = {
+        'Content-Type' => 'application/json'
+    }
+
+    @editar = User.new(@body, @header)
+end
