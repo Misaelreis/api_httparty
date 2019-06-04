@@ -19,7 +19,7 @@ Before '@tasks' do
     @body = JSON.generate({
         'task'=> {
             'title'=> 'Tarefa qa',
-            'description' => 'Descrição da tarefa',
+            'description' => 'Tarefa de teste',
             'deadline' => '2019-06-02 15:00:00',
             'done'=> true
           }
@@ -32,4 +32,5 @@ Before '@tasks' do
     }
 
     @tarefa = Tarefa.new(@body, @header)
+    @list = Tarefa.new(false, @header)
 end
