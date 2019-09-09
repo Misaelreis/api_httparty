@@ -2,7 +2,7 @@ Api | Httparty
 ---| ------
 # Api de tarefa #
 ![api rest](https://b2evolution.net/media/blogs/man/quick-uploads/rest-api/restful_api.jpg?mtime=1448389737)
-## Automação API com HTTParty##
+## Automação API com HTTParty ##
 
 ## Pré-requisitos
 
