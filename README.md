@@ -1,10 +1,10 @@
 Api | Httparty
 ---| ------
-Ruby | [![Ruby](https://miro.medium.com/max/2006/1*vDfPnrjjPBJTP1xQwLT8wA.png)](https://www.ruby-lang.org/pt/documentation/)
+Ruby | [![Ruby](https://cdn-images-1.medium.com/max/800/1*Ro7tWXCa3MUYL2oG2p2nUQ.jpeg)](https://www.ruby-lang.org/pt/documentation/)
 
 
 # Api de tarefa #
-![api rest](https://becode.com.br/wp-content/uploads/2017/02/Diferenca-de-REST-para-RESTful-API-11.png)
+![api rest](https://b2evolution.net/media/blogs/man/quick-uploads/rest-api/restful_api.jpg?mtime=1448389737)
 ## Automação API com HTTParty##
 
 ## Pré-requisitos
